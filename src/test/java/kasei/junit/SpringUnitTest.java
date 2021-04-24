@@ -44,11 +44,11 @@ public class SpringUnitTest {
         
         
         InitialContext jndiCtx = new InitialContext();
-        String jndiKey = (String)jndiCtx.lookup("jndiKey");
+        //String jndiKey = (String)jndiCtx.lookup("jndiKey");
         String defaultKey = (String)jndiCtx.lookup("defaultKey");
         String rootKey = (String)jndiCtx.lookup("root.rootKey");
         String jdbcUrl = (String)jndiCtx.lookup("db.datasource.jdbc.url");
-        System.out.println(jndiKey);
+        //System.out.println(jndiKey);
         System.out.println(rootKey);
         System.out.println(defaultKey);
         System.out.println(jdbcUrl);
